@@ -4,17 +4,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-section1 {
-  height:100%;
+.body{
   width:100%;
-  background-position:center;
-  background-repeat:no-repeat;
-  background-size:color;
-    display: table;
-    clear: both;
-    padding: 10px;
-   height: 900px;
-    background-image: url("SucculentBackground.jpg");
+  height:100%;
 }
 .navigation{
   text-align:right;
@@ -37,7 +29,6 @@ section1 {
   animation-name: button1;
   animation-duration: 15s;
 }
-
 .button1:hover{
   color:black;
 }
@@ -64,13 +55,11 @@ section1 {
   .button2:hover{
     color:black;
   }
-
   .dropdown {
       position: relative;
       display: inline-block;
       text-align:right;
   }
-
   .dropdown-content {
       display: none;
       position: absolute;
@@ -79,7 +68,6 @@ section1 {
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
   }
-
   .dropdown-content a {
       color: black;
       padding: 12px 16px;
@@ -87,11 +75,8 @@ section1 {
       display: block;
   }
   .dropdown-content a:hover {background-color: #ddd;}
-
   .dropdown:hover .dropdown-content {display: block;}
-
   .dropdown:hover .button2 {background-color: #3e8e41;}
-
   .button3 {
     background-color:#ADD8E6;
     border:none;
@@ -121,29 +106,26 @@ h1{
   font-size: 125px;
   text-align: left
 }
-
 }
-
 </style>
 </head>
 <title>Bio of Amy Leuszler</title>
-<body>
+<body style="background-image:url('SucculentBackground.jpg')">
 
   <script>
   window.alert("Please leave comments");
   </script>
 
-<section1>
   <div class="navigation">
-  <div class="button1"><a href="About.html">About</a></div>
+  <button class="button1"><a href="About.html">About</a></button>
   <div class="dropdown">
-  <button class="button2">Portfolio</button>
+  <button class="button2"><a href="Portfolio.html">Portfolio</a></button>
   <div class="dropdown-content">
-   <a href="Portfolio.html">Spark</a>
-   <a href="Portfolio.html">Hub</a>
-   <a href="Portfolio.html">Vann Fellowship</a>
+   <a href="Spark.html">Spark</a>
+   <a href="Hub.html">Hub</a>
+   <a href="VannFellowship.html">Vann Fellowship</a>
    </div>
-  <button class="button3">Contact</button>
+  <button class="button3"><a href="Contact.html">Contact</a></button>
   </div>
 </div>
 
@@ -159,7 +141,10 @@ h1{
   <br>
   <br>
 
-  </section1>
   <div>
 </body>
   </html>
+
+
+  <div>
+</body>
