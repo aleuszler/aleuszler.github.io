@@ -1,9 +1,200 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
  <style>
-  </style>
-  <body>
-    <p>This is the page<p>
-   </body>
+ body {
+   font-family: Arial, Helvetica, sans-serif;
+ }
+.Header{
+  font-family:Stylish Calligraphy Demo;
+  font-size:80px;
+  padding:20px;
+  text-align:center;
+}
+ .hub-card {
+   padding:50px;
+   background-color: transparent;
+   width: 400px;
+   height: 400px;
+   perspective: 1000px;
+ }
+
+ .hub-card-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.6s;
+   transform-style: preserve-3d;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ }
+
+ .hub-card:hover .hub-card-inner {
+   transform: rotateY(180deg);
+ }
+
+ .hub-card-front, .hub-card-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+ }
+
+ .hub-card-front {
+   background-color: #bbb;
+   color: black;
+ }
+
+ .hub-card-back {
+   background-color: #2980b9;
+   color: white;
+   text-align:center;
+   font-family:serif;
+   transform: rotateY(180deg);
+ }
+
+
+
+
+
+ .spark-card {
+   position:relative;
+  left:500px;
+  bottom:450px;
+   background-color: transparent;
+   width: 400px;
+   height: 400px;
+   perspective: 1000px;
+ }
+
+ .spark-card-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.6s;
+   transform-style: preserve-3d;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ }
+
+ .spark-card:hover .spark-card-inner {
+   transform: rotateY(180deg);
+ }
+ .spark-card-front, .spark-card-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+ }
+
+ .spark-card-front {
+   font-size:120px;
+   text-align:center;
+   background-color: #bbb;
+   color: black;
+   font-family:Desdemona;
+ }
+
+ .spark-card-back {
+   background-color: #2980b9;
+   color: white;
+   text-align:center;
+   font-family:serif;
+   transform: rotateY(180deg);
+ }
+
+
+
+ .vf-card {
+  position:relative;
+  left:950px;
+  bottom:850px;
+   background-color: transparent;
+   width: 400px;
+   height: 400px;
+   perspective: 1000px;
+ }
+
+ .vf-card-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.6s;
+   transform-style: preserve-3d;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ }
+
+ .vf-card:hover .vf-card-inner {
+   transform: rotateY(180deg);
+ }
+ .vf-card-front, .vf-card-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+ }
+
+ .vf-card-front {
+   background-color: #bbb;
+   color: white;
+   font-size:120px;
+   text-align:center;
+   font-family:Desdemona;
+ }
+
+ .vf-card-back {
+   background-color: #2980b9;
+   color: white;
+   text-align:center;
+   font-family:serif;
+   transform: rotateY(180deg);
+ }
+ </style>
+ </head>
+ <body>
+ <div class="Header">Portfolio*</div>
+ <div class="hub-card">
+   <div class="hub-card-inner">
+     <div class="hub-card-front">
+       <img src="hublogo.png" style="width:400px;height:400px;">
+     </div>
+     <div class="hub-card-back">
+       <h1>hub()</h1>
+      <p>A middle school outreach program that focuses on problem-solving and coding in python<p>
+      <p>We have developed and piloted the curriculum throughout the past year with local middle schools.<p>
+      <p>hubkucoding.com<p>
+     </div>
+   </div>
+ </div>
+</div>
+
+ <div class="spark-card">
+   <div class="spark-card-inner">
+     <div class="spark-card-front">
+       <img src="sparklogo.png" style="width:400px;height:400px;">
+     </div>
+     <div class="spark-card-back">
+       <h1>{Spark}</h1>
+      <p>This organization facilitates STEM activities in coordination with other engineering organizations to provide access to various types of engineering to students in the grades 1-8.<p>
+      <p>My role on the leadership team is mainly internal relations. I work with the school of engineering organizations to schedule high-quality educational events. Additionally, I handle general inquiries.
+      <p>https://www.facebook.com/sparkatku/<p>
+     </div>
+   </div>
+ </div>
+
+
+ <div class="vf-card">
+   <div class="vf-card-inner">
+     <div class="vf-card-front">
+        <img src="dollarsign.svg" style="width:400px;height:400px;">
+     </div>
+     <div class="vf-card-back">
+       <h1>Vann Fellowship</h1>
+      <p>This semester long program focused on combining the principles of engineering and business. We were able to hear from individuals in the field. Along with the speakers, we completed economic games and analyzed economists and companies through readings and essays.<p>
+     </div>
+   </div>
+ </div>
+ </body>
