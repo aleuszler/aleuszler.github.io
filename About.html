@@ -2,102 +2,303 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Pacifico">
+  href="https://fonts.googleapis.com/css?family=Bebas+Neue">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Squada+One">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Raleway">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style type="text/css">
 body {
- background-color: #c8c9d1;
-  font-family: 'Pacifico', serif;
+  font-family: 'Raleway', serif;
 }
 
-.book {
- position: absolute;
- top: 0;
- bottom: 0;
- left: 0;
- right: 0;
+.bg{
+ text-align: center;
+ height:100%;
  margin: auto;
- width: 525px;;
- height: 600px;
- perspective: 150rem;
-}
-.cover {
- background-color: #FFFFFF;
- transform-origin: 0 0;
- width: 305px;
- height: 405px;
-}
+ background: white;
+  }
 
-.cover:hover .face{
- -webkit-transition: all 3s ease-out;
-}
-.face{
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- -webkit-backface-visibility: visible;
- -webkit-transition: all 3s ease-out;
- transform-origin: 0 0;
-}
-.front {
- background-color: #bbb;
- color: black;
- background-image:url("Sunflower.jpg");
- background-size:cover;
- background-repeat:no-repeat;
- font-family:'Pacifico', serif;
- font-size:90px;
- -webkit-transform: rotateY(-20deg);
-z-index: 2;
-}
-.back {
- background-color: #FFFFFF;
- box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
- color: white;
- -webkit-transform: rotateY(0deg);
-  z-index: 1;
-  background-image:url("AmyLeuszlerResume.jpg");
-  background-size:93%;
-  background-repeat:no-repeat;
-}
-.cover:hover .front {
-   -webkit-transform: rotateY(-150deg);
-}
-.cover:hover .front{
-   -webkit-transform: rotateY(-85deg);
+  /* .btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    color:black;
+  } */
+
+.Header{
+ font-family: 'Raleway', serif;
+ font-size:80px;
+ text-align:center;
+ /* padding-bottom: 25px; */
+ top: 25%;
 }
 .button1{
- padding: 20px 20px;
- margin:auto;
- background-color: #5aaded;
- border-radius: 50%;
- }
-  
+  border: none;
+  background-color:inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Raleway';
+  color: black;
+  }
+
+.txtabme {
+  font-family:serif;
+  width:700px;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+*******************************************
+.cardcontainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 100px;
+}
+
+
+#hublogo {
+  width: 100%;
+  height: 100%;
+  /* margin-left:auto;
+  margin-right:auto; */
+}
+.hub-card {
+  display: inline-block;
+  /* background-color: transparent; */
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+  text-align: center;
+}
+
+.hub-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+.hub-card:hover .hub-card-inner {
+  transform: rotateY(180deg);
+}
+
+.hub-card-front, .hub-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  /* border-radius:50px/50px; */
+}
+
+.hub-card-front {
+  /* background: url("hublogo.png"); */
+  background-color: #bbeaff;
+  color: black;
+  border-radius:50px/50px;
+}
+
+.hub-card-back {
+  background-color: #bbeaff;
+  color: black;
+  text-align:center;
+  font-family:serif;
+  transform: rotateY(180deg);
+  font-size: 12px;
+  border-radius:50px/50px;
+}
+
+
+
+
+
+.spark-card {
+  /* float: left; */
+  display:inline-block;
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+}
+
+.spark-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.spark-card:hover .spark-card-inner {
+  transform: rotateY(180deg);
+}
+.spark-card-front, .spark-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.spark-card-front {
+  font-size:20px;
+  text-align:center;
+  background-color: #bbeaff;
+  color: black;
+  font-family:Desdemona;
+  border-radius:50px/50px;
+}
+
+#sparklogo {
+  border-radius:50px;
+  width:100%;
+  height:100%;
+}
+
+.spark-card-back {
+  background-color: #bbeaff;
+  color: black;
+  text-align:center;
+  font-family:serif;
+  font-size: 10px;
+  transform: rotateY(180deg);
+  border-radius:50px/50px;
+}
+
+
+
+.vf-card {
+ /* float: right; */
+ display:inline-block;
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+}
+
+.vf-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.vf-card:hover .vf-card-inner {
+  transform: rotateY(180deg);
+}
+.vf-card-front, .vf-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.vf-card-front {
+  background-color: #bbeaff;
+  color: black;
+  font-size:20px;
+  text-align:center;
+  font-family:Desdemona;
+  border-radius:50px/50px;
+
+}
+
+.vf-card-back {
+  background-color: #bbeaff;
+  color: black;
+  text-align:center;
+  font-family:serif;
+  transform: rotateY(180deg);
+  font-size:12px;
+  border-radius:50px/50px;
+}
+
+#vflogo{
+    border-radius:50px;
+    width:100%;
+    height:100%;
+}
+
   a:link {
-  text-decoration: none;
+ text-decoration: none;
 }
 a:visited {
-  text-decoration: none;
+ text-decoration: none;
 }
 a:hover {
-  text-decoration: none;
+ text-decoration: none;
 }
 a:active {
-  text-decoration: none;
+ text-decoration: none;
 }
+
 
 </style>
 <body>
-<button class="button1"><a href="index.html">Home</a></button>
-<div class="book">
-<span class="cover">
-<div class="front face">
+<button class="button1"><a href="index.html"><- Home</a></button>
+  <div class="bg">
+<div class="Header">
 <div class="Text">About Me</div>
 </div>
-<div class="back face">
+<div class="txtabme">
+  <p> Hi! My name is Amy Leuszler. I will be a senior at the University of Kansas studying Computer Engineering. I am very interested in Information Security. In my freetime, I enjoy learning new things, adventuring outside, trying new restaurants, and online shopping.
 </div>
-</span>
+<br>
+<br>
+<br>
+<div class="cardcontainer">
+<div class="hub-card">
+  <div class="hub-card-inner">
+    <div class="hub-card-front">
+      <img id="hublogo" src="hublogo.png"></img>
+    </div>
+    <div class="hub-card-back">
+      <h1>hub()</h1>
+     <p>A middle school outreach program that focuses on problem-solving and coding in python<p>
+     <p>We have developed and piloted the curriculum throughout the past year with local middle schools.<p>
+     <p>hubkucoding.com<p>
+    </div>
+  </div>
+</div>
+
+<div class="spark-card">
+  <div class="spark-card-inner">
+    <div class="spark-card-front">
+      <img id="sparklogo" src="sparklogo.png"></img>
+    </div>
+    <div class="spark-card-back">
+      <h1>{Spark}</h1>
+     <p>This organization facilitates STEM activities in coordination with other engineering organizations to provide access to various types of engineering to students in the grades 1-8.<p>
+     <p>My role on the leadership team is mainly internal relations. I work with the school of engineering organizations to schedule high-quality educational events. Additionally, I handle general inquiries.
+     <p>https://www.facebook.com/sparkatku/<p>
+    </div>
+  </div>
+</div>
+
+
+<div class="vf-card">
+  <div class="vf-card-inner">
+    <div class="vf-card-front">
+       <img id="vflogo" src="dollarsign.svg"></img>
+    </div>
+    <div class="vf-card-back">
+      <h1>Vann Fellowship</h1>
+     <p>This semester long program focused on combining the principles of engineering and business. We were able to hear from individuals in the field. Along with the speakers, we completed economic games and analyzed economists and companies through readings and essays.<p>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
 </body>
